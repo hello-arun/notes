@@ -1,0 +1,38 @@
+{
+  "title": "Notes",
+  "tagline": "Read, revise, understand — then test yourself. Math, figures and live simulations in one place.",
+  "subjects": [
+    {
+      "id": "dft",
+      "title": "Density Functional Theory",
+      "short": "DFT",
+      "description": "From the many-electron Schrödinger equation to Kohn–Sham, exchange–correlation functionals, plane-wave practice and machine-learned potentials — written to the depth expected in research-engineer interviews at AI-for-science teams.",
+      "intro": "Each chapter ends with a quiz. Chapters **11** (question bank) and **12** (final exam) are for interview preparation. Interactive figures run real calculations in your browser — play with them.",
+      "scripts": ["content/dft/dft-anims.js"],
+      "chapters": [
+        { "id": "overview", "num": 0, "file": "00-overview.md", "title": "Roadmap & one-page cheat sheet", "minutes": 10, "description": "What DFT is, why it matters, how to use these notes, and the equations you must know cold." },
+        { "id": "many-body", "num": 1, "file": "01-many-body.md", "title": "The many-electron problem", "minutes": 25, "description": "Born–Oppenheimer, the exponential wall, Hartree and Hartree–Fock, exchange vs correlation." },
+        { "id": "hohenberg-kohn", "num": 2, "file": "02-hohenberg-kohn.md", "title": "Hohenberg–Kohn theorems", "minutes": 20, "description": "Why the density is enough: proofs, the variational principle, Levy–Lieb constrained search, Thomas–Fermi." },
+        { "id": "kohn-sham", "num": 3, "file": "03-kohn-sham.md", "title": "Kohn–Sham equations", "minutes": 30, "description": "The non-interacting reference system, derivation, total energy, meaning of eigenvalues, the SCF loop (with a live solver)." },
+        { "id": "xc-functionals", "num": 4, "file": "04-xc-functionals.md", "title": "Exchange–correlation functionals", "minutes": 35, "description": "xc holes, adiabatic connection, LDA → GGA → meta-GGA → hybrids → double hybrids, dispersion, exact constraints." },
+        { "id": "failures", "num": 5, "file": "05-failures.md", "title": "Where DFT fails — and the fixes", "minutes": 25, "description": "Self-interaction, delocalization error, the band-gap problem, strong correlation, DFT+U, dispersion." },
+        { "id": "practice", "num": 6, "file": "06-practice.md", "title": "DFT in practice", "minutes": 40, "description": "Bloch's theorem, k-points, basis sets, pseudopotentials & PAW, smearing, SCF mixing, convergence and codes." },
+        { "id": "beyond", "num": 7, "file": "07-beyond.md", "title": "Forces, dynamics & beyond the ground state", "minutes": 30, "description": "Hellmann–Feynman and Pulay forces, relaxations, phonons/DFPT, AIMD, spin, TDDFT, GW, finite temperature." },
+        { "id": "ml-dft", "num": 8, "file": "08-ml-dft.md", "title": "Machine learning × DFT", "minutes": 40, "description": "ML interatomic potentials, equivariant GNNs, universal models, datasets, learned functionals, generative materials design." },
+        { "id": "hands-on", "num": 9, "file": "09-hands-on.md", "title": "Hands-on: write a Kohn–Sham solver", "minutes": 30, "description": "A complete 1D DFT code in NumPy, then real calculations with PySCF and ASE + Quantum ESPRESSO." },
+        { "id": "history", "num": 10, "file": "10-history.md", "title": "History & progress", "minutes": 15, "description": "A century of ideas: Thomas–Fermi to foundation models for atoms." },
+        { "id": "interview", "num": 11, "file": "11-interview.md", "title": "Interview question bank", "minutes": 60, "description": "~60 questions with model answers: fundamentals, practice, ML, coding and system design." },
+        { "id": "exam", "num": 12, "file": "12-exam.md", "title": "Final exam & flashcards", "minutes": 30, "description": "A mixed test across all chapters plus a flashcard deck for spaced revision." }
+      ]
+    },
+    {
+      "id": "mathematical-physics",
+      "title": "Mathematical Physics",
+      "short": "Math Phys",
+      "description": "Multivariable calculus for physicists: gradients, Jacobians, Hessians, stability and the road to coupled oscillations.",
+      "chapters": [
+        { "id": "multivariable-calculus", "num": 1, "file": "multivariable-calculus-coupled-oscillators.md", "title": "Multivariable calculus for coupled oscillators", "description": "Partial derivatives, chain rule, gradient, Jacobians, Taylor expansion, Hessian and linearisation." }
+      ]
+    }
+  ]
+}
